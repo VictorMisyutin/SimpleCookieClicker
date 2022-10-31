@@ -21,7 +21,10 @@ public class GUI implements ActionListener {
 	private double cookieValue = 1, cookiesPS = 0, clickerPrice = 10, grannyPrice = 50, factoryPrice = 100, farmPrice = 500;;
 	private int totalMoney,clickers, grannies, factories, farms;
 	private JLabel valueLabel, moneyLabel, PSLabel,displayLabel;
-	private JPanel coockiePanel, moneyPanel, shopPanel, infoPanel, clickerInfoPanel, grannyInfoPanel, factoryInfoPanel, farmInfoPanel, displayPanel;
+	private JPanel coock
+		
+		
+		iePanel, moneyPanel, shopPanel, infoPanel, clickerInfoPanel, grannyInfoPanel, factoryInfoPanel, farmInfoPanel, displayPanel;
 	private ImageIcon image;
 	private JButton cookieButton, buyClicker, buyGranny, buyFactory, buyFarm, clickerInfo, grannyInfo, factoryInfo, farmInfo;
 	private Font moneyFont;
@@ -82,7 +85,7 @@ public class GUI implements ActionListener {
 		//labels
 		
 		valueLabel = new JLabel("Each Cookie Click is Worth: " + cookieValue);
-		moneyLabel = new JLabel("Coockies: $" + totalMoney);
+		moneyLabel = new JLabel("Cookies: $" + totalMoney);
 		moneyLabel.setFont(moneyFont);
 		PSLabel = new JLabel ("You are making $" + cookiesPS + " a second");
 	    displayLabel = new JLabel();
@@ -183,7 +186,7 @@ public class GUI implements ActionListener {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					totalMoney+= cookiesPS;
-					moneyLabel.setText("Coockies: $" + totalMoney);
+					moneyLabel.setText("Cookies: $" + totalMoney);
 				}
 		});
 		
