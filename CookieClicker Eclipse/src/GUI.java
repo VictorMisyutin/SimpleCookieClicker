@@ -21,10 +21,7 @@ public class GUI implements ActionListener {
 	private double cookieValue = 1, cookiesPS = 0, clickerPrice = 10, grannyPrice = 50, factoryPrice = 100, farmPrice = 500;;
 	private int totalMoney,clickers, grannies, factories, farms;
 	private JLabel valueLabel, moneyLabel, PSLabel,displayLabel;
-	private JPanel coock
-		
-		
-		iePanel, moneyPanel, shopPanel, infoPanel, clickerInfoPanel, grannyInfoPanel, factoryInfoPanel, farmInfoPanel, displayPanel;
+	private JPanel cookiePanel, moneyPanel, shopPanel, infoPanel, clickerInfoPanel, grannyInfoPanel, factoryInfoPanel, farmInfoPanel, displayPanel;
 	private ImageIcon image;
 	private JButton cookieButton, buyClicker, buyGranny, buyFactory, buyFarm, clickerInfo, grannyInfo, factoryInfo, farmInfo;
 	private Font moneyFont;
@@ -91,7 +88,7 @@ public class GUI implements ActionListener {
 	    displayLabel = new JLabel();
 		
 		//Create JPanel object
-		coockiePanel = new JPanel();
+		cookiePanel = new JPanel();
 		moneyPanel = new JPanel();
 		infoPanel = new JPanel();
 		shopPanel = new JPanel();
@@ -105,11 +102,11 @@ public class GUI implements ActionListener {
 		//set up panels
 		
 		//panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
-		coockiePanel.setLayout(new GridLayout());
-		coockiePanel.setBounds(50, 200, 300, 300);
+		cookiePanel.setLayout(new GridLayout());
+		cookiePanel.setBounds(50, 200, 300, 300);
 
-		//coockiePanel.setBackground(Color.red);
-		coockiePanel.add(cookieButton);
+		//cookiePanel.setBackground(Color.red);
+		cookiePanel.add(cookieButton);
 		
 		moneyPanel.setLayout(new GridLayout());
 		moneyPanel.setBounds(160, 50, 170, 50);
@@ -164,7 +161,7 @@ public class GUI implements ActionListener {
 		
 		//add panel to frame
 		frame.add(displayPanel);
-		frame.add(coockiePanel);
+		frame.add(cookiePanel);
 		frame.add(moneyPanel);
 		frame.add(clickerInfoPanel);
 		frame.add(grannyInfoPanel);
@@ -280,7 +277,7 @@ public class GUI implements ActionListener {
 		
 		
 		
-		moneyLabel.setText("Coockies: $" + totalMoney);
+		moneyLabel.setText("Cookies: $" + totalMoney);
 		PSLabel.setText("You are making $" + cookiesPS + " a second");
 		valueLabel.setText("Each Cookie Click is Worth: " + cookieValue);
 	}	
